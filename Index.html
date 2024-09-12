@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco Virtual</title>
+</head>
+<body>
+    <div><h1> Maze Bank</h1></div>
+    <div> 
+        <h3>Ingresar Dolares</h3> 
+      <input type="number" id="IngresarDolares">
+      <button onclick="Ingresar()">Ingresar </button>
+    </div>
+
+
+
+    <div> 
+        <h3>Retirar Dolares</h3> 
+      <input type="number" id="RetiarDolares">
+      <button onclick="Retirar()">Retirar</button>
+    </div>
+
+
+    <div>
+      <h3>Convertir a pesos Arg</h3>
+      <input type="number" id="ConvertirArs">
+      <button onclick="Convertir()">Convertir</button>
+      <p id="conversionResult"></p>
+      <p>Saldo disponible: $<span id="availableUSD">0</span> USD</p>
+
+      <h3>Historial de Transacciones</h3>
+      <ul id="transactionHistory"></ul>
+</div>
+</body>
+</html>
