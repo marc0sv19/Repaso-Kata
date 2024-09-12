@@ -18,6 +18,9 @@ body {
     overflow: hidden; /* Evitar barras de desplazamiento */
     position: relative; /* Para el posicionamiento absoluto del fondo */
 }
+.ocultar{
+    visibility: hidden;
+}
 
 
 
