@@ -7,33 +7,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-
-    <div id="app"> <!-- Cambié el contenedor principal para que esté alineado con el CSS -->
-        <h1>Maze Bank</h1>
-
-        <div>
-            <h3>Ingresar Dólares</h3>
-            <input type="number" id="IngresarDolares" placeholder="Monto en USD">
-            <button onclick="Ingresar()">Ingresar</button>
-        </div>
-
-        <div>
-            <h3>Retirar Dólares</h3>
-            <input type="number" id="RetirarDolares" placeholder="Monto en USD">
-            <button onclick="Retirar()">Retirar</button>
-        </div>
-
-        <div>
-            <h3>Convertir a Pesos Argentinos</h3>
-            <input type="number" id="ConvertirArs" placeholder="Cantidad en USD">
-            <button onclick="Convertir()">Convertir</button>
-            <p id="conversionResult"></p>
-            <p>Saldo disponible: $<span id="availableUSD">0</span> USD</p>
-
-            <h3>Historial de Transacciones</h3>
-            <ul id="transactionHistory"></ul>
-        </div>
+    <h1> Maze Bank</h1>
+    <div> 
+        <h3>Ingresar Dolares</h3> 
+      <input type="number" id="IngresarDolares">
+      <button onclick="Ingresar()">Ingresar </button>
     </div>
+
+
+    <div> 
+        <h3>Retirar Dolares</h3> 
+      <input type="number" id="RetiarDolares">
+      <button onclick="Retirar()">Retirar</button>
+    </div>
+
+
+    
+      <h3>Cambio Dolares a Pesos</h3>
+      <input type="number" id="Cambiar">
+      <button onclick="Convertir()">Convertir</button>
+      <p> Saldo disponibles <span  id="mostrar"></span></p>
+      <h3>Historial de Transacciones</h3>
+      <div id="transactionHistory"></div>
+      <h3>Total a pagar</h3>
+        <div id="Total"></div>
 </body>
+<script src="Main.js"></script>
 </html>
