@@ -17,7 +17,7 @@ function Ingresar(){
     
      if(document.getElementById("IngresarDolares").value<=0){
        
-        alert("debes ingresar una cantidad valida de dolares mayor a 0")
+        alert("Debes ingresar una cantidad valida de dolares mayor a 0")
     }
     else{
         U$ = U$ + parseInt(document.getElementById("IngresarDolares").value);
@@ -27,11 +27,11 @@ function Ingresar(){
 function Retirar(){
 
     if(document.getElementById("RetiarDolares").value>U$){
-        alert("no hay saldo suficiente")
+        alert("No hay saldo suficiente")
     }
     else{
         if(document.getElementById("RetiarDolares").value<=0){
-            alert("debe ingresar una cantidad mayor a 0")
+            alert("Debe ingresar una cantidad mayor a 0")
         }
         else{
 
@@ -44,7 +44,7 @@ function Retirar(){
 
 function Convertir(){
     if(document.getElementById("Cambiar").value<=0){
-       alert("debe ingresar un valor mayor a 0 para convertir") 
+       alert("Debe ingresar un valor mayor a 0 para convertir") 
     }
     else{
         let doloresCambiar=document.getElementById("Cambiar").value
@@ -56,7 +56,7 @@ function Convertir(){
             cant1=cant1-cant1
             U$=U$-200
             doloresCambiar=doloresCambiar-200
-             html+=`<p>cantidad de dolares convertidos a peso:200,precio en peso:${producto}, Peso Argentino Oficial</p>`
+             html+=`<p>Cantidad de dolares convertidos a peso:200, Precio en peso:${producto}, Peso Argentino Oficial</p>`
            document.getElementById("mostrar").innerHTML=U$
             document.getElementById("transactionHistory").innerHTML=html
         }
@@ -65,7 +65,7 @@ function Convertir(){
             total=total+(producto)
             cant1=cant1-doloresCambiar
             U$=U$-doloresCambiar
-            html+=`<p>cantidad de dolares convertidos a peso:${doloresCambiar},precio en peso:${producto},Peso Argentino Oficial</p>`
+            html+=`<p>Cantidad de dolares convertidos a peso:${doloresCambiar}, Precio en peso:${producto}, Peso Argentino Oficial</p>`
             document.getElementById("mostrar").innerHTML=U$
             document.getElementById("transactionHistory").innerHTML=html
             doloresCambiar=0
@@ -79,7 +79,7 @@ function Convertir(){
                 cant2=cant2-cant2
                 doloresCambiar=doloresCambiar-800
                 U$=U$-800
-                 html+=`<p>cantidad de dolares convertidos a peso:800,precio en peso:${producto},Peso Argentino CCL</p>`
+                 html+=`<p>Cantidad de dolares convertidos a peso:800, Precio en peso:${producto}, Peso Argentino CCL</p>`
            document.getElementById("mostrar").innerHTML=U$
             document.getElementById("transactionHistory").innerHTML=html
             }else{
@@ -87,7 +87,7 @@ function Convertir(){
                 total=total+(producto)
             cant1=cant2-doloresCambiar
             U$=U$-doloresCambiar
-            html+=`<p>cantidad de dolares convertidos a peso:${doloresCambiar},precio en peso:${producto},Peso Argentino CCL</p>`
+            html+=`<p>Cantidad de dolares convertidos a peso:${doloresCambiar}, Precio en peso:${producto}, Peso Argentino CCL</p>`
             document.getElementById("mostrar").innerHTML=U$
             document.getElementById("transactionHistory").innerHTML=html
             doloresCambiar=0
@@ -98,7 +98,7 @@ if(doloresCambiar>0){
     producto=peso2*doloresCambiar
             total=total+(producto);
             U$=U$-doloresCambiar
-             html+=`<p>cantidad de dolares convertidos a peso:${doloresCambiar},precio en peso:${producto},Peso Argentino MEP</p>`
+             html+=`<p>Cantidad de dolares convertidos a peso:${doloresCambiar}, Precio en peso:${producto}, Peso Argentino MEP</p>`
            document.getElementById("mostrar").innerHTML=U$
             document.getElementById("transactionHistory").innerHTML=html
             doloresCambiar=doloresCambiar-doloresCambiar;     
