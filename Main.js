@@ -85,7 +85,7 @@ function Convertir(){
             }else{
                 producto=peso1*doloresCambiar
                 total=total+(producto)
-            cant1=cant2-doloresCambiar
+            cant2=cant2-doloresCambiar
             U$=U$-doloresCambiar
             html+=`<p>Cantidad de dolares convertidos a peso:${doloresCambiar}, Precio en peso:${producto}, Peso Argentino CCL</p>`
             document.getElementById("mostrar").innerHTML=U$
