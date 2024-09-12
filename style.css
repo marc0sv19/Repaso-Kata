@@ -62,7 +62,7 @@ h3 {
 }
 
 input {
-    width: 100%;
+    width: 30%;
     padding: 12px;
     margin-bottom: 15px;
     border: none;
@@ -74,7 +74,7 @@ input {
 }
 
 button {
-    width: 100%;
+    width: 30%;
     padding: 12px;
     background-color: #238630; /* Color de fondo del botón */
     color: white;

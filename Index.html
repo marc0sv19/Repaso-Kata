@@ -3,32 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banco Virtual</title>
+    <title>Banco Virtual</title>    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1> Maze Bank</h1>
-    <div> 
-        <h3>Ingresar Dolares</h3> 
+    <h3>Ingresar Dolares</h3>     
       <input type="number" id="IngresarDolares">
       <button onclick="Ingresar()">Ingresar </button>
-    </div>
-
-    <div> 
-        <h3>Retirar Dolares</h3> 
+        
+    <h3>Retirar Dolares</h3>     
       <input type="number" id="RetiarDolares">
       <button onclick="Retirar()">Retirar</button>
-    </div>
+        
+    <h3>Cambio Dolares a Pesos</h3>
     
-      <h3>Cambio Dolares a Pesos</h3>
       <input type="number" id="Cambiar">
       <button onclick="Convertir()">Convertir</button>
       <button onclick="mostrar()">Mostrar Saldo</button>
+    
       <p  id="ver" class="ocultar" > Saldo disponibles <span  id="mostrar"></span></p>
       <h3>Historial de Transacciones</h3>
       <div id="transactionHistory"></div>
       <h3>Total a pagar</h3>
-        <div id="Total"></div>
+      <div id="Total"></div>
 </body>
 <script src="Main.js"></script>
 </html>
